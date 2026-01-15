@@ -1,11 +1,7 @@
-// Напишите функцию min(a,b), которая возвращает меньшее из чисел a и b.
-function ChechMinNumber(a, b){
-  if(a>b){
-    alert(b);
+function pow (x, n){
+  for(let i = 1; i <= 100; i++){
+    result = x**n
   }
-    else {
-      alert(a);
-    }
-  }
-
-  ChechMinNumber(3, -1)
+  alert(result)
+}
+ pow(3,2 )
