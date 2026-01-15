@@ -1,18 +1,11 @@
-// function checkAge(age) {
-//     if (age > 18) {
-//       return true;
-//     } else {
-//       return confirm('Родители разрешили?');
-//     }
-//   }
-
-function checkAge(age) {
-    return (age > 18) ? true : confirm('Родители разрешили?')
+// Напишите функцию min(a,b), которая возвращает меньшее из чисел a и b.
+function ChechMinNumber(a, b){
+  if(a>b){
+    alert(b);
+  }
+    else {
+      alert(a);
+    }
   }
 
-  function checkAge_2(age) {
-    return (age > 18) || confirm('Родители разрешили?');
-  }
-
-  checkAge(12);
-  checkAge_2(19);
+  ChechMinNumber(3, -1)
