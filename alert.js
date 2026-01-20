@@ -1,9 +1,8 @@
-let arr = [3, 7, 2, 9, 5];
-let max = arr[0];
+let arr = [10, 20, 30, 40];
+let sum = 0;
 for (let i = 0; i < arr.length; i++){ 
-  if(arr[i] > max){
-     max = arr[i];
-  }
+  sum += arr[i];
 }
-console.log(max)
+let sred = sum/arr.length
+console.log(sred)
 
