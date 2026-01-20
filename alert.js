@@ -1,7 +1,8 @@
-let sum = 1;
-for (let i = 1; i <= 5; i++){ 
-  sum *= i
+let count = 0;
+for (let i = 1; i <= 50; i++){ 
+  if(i % 2 == 0){
+     count++
+  }
 }
-console.log(sum)
+console.log(count)
 
- 
