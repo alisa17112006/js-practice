@@ -1,8 +1,9 @@
-let arr = [10, 20, 30, 40];
-let sum = 0;
+let arr = [1, 2, 3, 4, 5, 6, 7, 8];
+let arr_chet = [];
 for (let i = 0; i < arr.length; i++){ 
-  sum += arr[i];
+  if(arr[i] % 2 == 0){
+    arr_chet.push(arr[i]);
+  }
 }
-let sred = sum/arr.length
-console.log(sred)
+console.log(arr_chet)
 
