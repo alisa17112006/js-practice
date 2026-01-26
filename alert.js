@@ -1,10 +1,9 @@
-let rows = 5;
-let cols = 5;
+let size = 8;
 
-for (let i = 1; i <= rows; i++) {
+for (let i = 1; i <= size; i++) {
     let row = '';
-    for (let j = 1; j <= cols; j++) {
-        if(i == 1 || i == rows || j == 1 || j == cols){
+    for (let j = 1; j <= size; j++) {
+        if((i + j) % 2 == 0){
             row += '#';
         }
         else {
