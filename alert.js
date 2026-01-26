@@ -1,16 +1,24 @@
-let size = 8;
+let rows = 5;
 
-for (let i = 1; i <= size; i++) {
+for (let i = 1; i <= rows; i++) {
     let row = '';
-    for (let j = 1; j <= size; j++) {
-        if((i + j) % 2 == 0){
-            row += '#';
-        }
-        else {
-            row += ' ';
-        }
-        
+    for (let s = 1; s <= rows - i; s++) {
+        row += ' ';
     }
+    for (let h = 1; h <= 2 * i - 1; h++) {
+        row += '#';
+    }    
+    console.log(row);
+}
+
+for (let i = rows - 1; i >= 1; i--){
+    let row = '';
+    for (let s = 1; s <= rows - i; s++) {
+        row += ' ';
+    }
+    for (let h = 1; h <= 2 * i - 1; h++) {
+        row += '#';
+    }    
     console.log(row);
 }
 
