@@ -1,9 +1,13 @@
-let arr = [1, 2, 3, 4, 5, 6, 7, 8];
-let arr_chet = [];
-for (let i = 0; i < arr.length; i++){ 
-  if(arr[i] % 2 == 0){
-    arr_chet.push(arr[i]);
-  }
+let rows = 5;
+let cols = 10;
+
+for(let i = 1; i <= rows; i++){
+    let row= '';
+    for (let j = 1; j <= cols; j++){
+        row += '*';
+    }
+    console.log(row);
 }
-console.log(arr_chet)
+
+
 
