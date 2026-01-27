@@ -1,24 +1,30 @@
-let rows = 5;
+let secret = Math.floor(Math.random() * 10) + 1;
+let guess = null;
+let attempts = 0;
+let maxAttempts = 5;
 
-for (let i = 1; i <= rows; i++) {
-    let row = '';
-    for (let s = 1; s <= rows - i; s++) {
-        row += ' ';
+while (guess !== secret && attempts < maxAttempts){
+    guess = Number(prompt("Угадай число от 1 до 10"))
+    if (isNaN(guess)) {
+        alert("Введите число!");
+        continue;
     }
-    for (let h = 1; h <= 2 * i - 1; h++) {
-        row += '#';
-    }    
-    console.log(row);
+    attempts++;
+
+    if(guess > secret){
+        alert("Много")
+    }
+    else if(guess < secret){
+        alert("Мало")
+    }
 }
 
-for (let i = rows - 1; i >= 1; i--){
-    let row = '';
-    for (let s = 1; s <= rows - i; s++) {
-        row += ' ';
+    if(guess === secret){
+        alert(`🎉 Победа за ${attempts} попытки!`)
     }
-    for (let h = 1; h <= 2 * i - 1; h++) {
-        row += '#';
-    }    
-    console.log(row);
-}
+    else{
+        alert(`❌ Ты проиграла. Число было: ${secret}`)
+    }
+
+
 
