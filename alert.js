@@ -1,3 +1,5 @@
+while(true){
+
 let secret = Math.floor(Math.random() * 10) + 1;
 let guess = null;
 let attempts = 0;
@@ -26,5 +28,12 @@ while (guess !== secret && attempts < maxAttempts){
         alert(`❌ Ты проиграла. Число было: ${secret}`)
     }
 
+    let again = confirm("Хочешь сыграть ещё?");
+
+    if(again === false){
+        break;
+    }
+
+}
 
 
