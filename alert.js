@@ -1,6 +1,10 @@
 while(true){
 
 let level = Number(prompt("Выбери уровень:\n1 — Легко\n2 — Средне\n3 — Сложно"));
+ if (level != 1 && level!= 2 && level != 3){ //![1,2,3].includes(level) - можно так
+    alert("Выберите уровень из доступных!");
+    continue;
+}
 let maxNumber;
 
 let guess = null;
