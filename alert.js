@@ -37,13 +37,27 @@ while (guess !== secret && attempts < maxAttempts){
     }
     attempts++;
 
-    if(guess > secret){
-        alert("Много")
+    if(guess === secret){
     }
-    else if(guess < secret){
-        alert("Мало")
+    else{
+        let distance = Math.abs(secret - guess)
+        if (distance <= 3){
+        alert("Горячо")
     }
+    else if(distance <= 7){
+        alert("Тепло")
+    }
+    else{
+        alert("Холодно")
+    }
+
 }
+    
+    }
+
+    
+
+    
 
     if(guess === secret){
         alert(`🎉 Победа за ${attempts} попытки!`)
